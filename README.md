@@ -1,6 +1,6 @@
 ### Hi, I'm Vinay Roy
 
-I am a AI and Product leader who builds, tests, and writes about how AI changes products and the way we build them.
+I'm an AI and product leader. I build, evaluate, and ship AI decision systems across B2B SaaS and marketplaces, and study what transfers between them.
 
 My projects explore what it takes to move AI from demos into production: evaluation, tool use, guardrails, human oversight, and decision quality. Each one starts the same way: a real problem, the smallest version that works, evals on the behavior that matters, and a write-up of the trade-offs.
 
@@ -8,9 +8,10 @@ My projects explore what it takes to move AI from demos into production: evaluat
 
 | Repo | What it shows |
 | --- | --- |
+| [enterprise-ai-platform](https://github.com/roy-vinay/enterprise-ai-platform) | An eval pipeline for BI chat bots that measures when they should stay quiet: trap questions that should be refused or clarified, consistency tests that need no answer key, and mutation testing of the semantic model, with results from two real models. |
 | [applied-ai-agents](https://github.com/roy-vinay/applied-ai-agents) | Working agents with guardrails and evals, including a fault-injection benchmark: the same agent with guards off vs on across 7 failure types, 100 trials each. |
 | [claude-code-team-playbook](https://github.com/roy-vinay/claude-code-team-playbook) | How to run several coding agents like a small team, plus **[Claim Before Code](https://github.com/roy-vinay/claude-code-team-playbook/tree/main/claim-before-code)**: agents claim shared code before editing it, and overlaps go to the owner instead of a merge conflict. |
-| [ai-decision-log](https://github.com/roy-vinay/ai-decision-log) | One-page memos on applied AI product decisions: the options, the numbers, what was picked, and what would change it. |
+| [ai-decision-log](https://github.com/roy-vinay/ai-decision-log) | One-page memos on applied AI product decisions: the options, the numbers, what was picked, and what would change it. Latest: [D-003, when should a BI bot answer, and when should it stay quiet?](https://github.com/roy-vinay/ai-decision-log/blob/main/decisions/D-003-when-should-a-bi-bot-stay-quiet.md) |
 
 **Series: [Failure Files](https://github.com/roy-vinay/applied-ai-agents/tree/main/failure-files)**, public AI failures turned into experiments. Each file is a case study of a documented incident, then the failure mode reproduced and the fixes measured.
 
