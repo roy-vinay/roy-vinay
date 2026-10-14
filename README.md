@@ -9,6 +9,11 @@ My projects explore what it takes to move AI from demos into production: evaluat
 https://github.com/user-attachments/assets/59dd167e-04f4-46d6-83a1-887d91a94747
 
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg">
+  <img alt="ASCII portrait of Vinay Roy. VP of Product at Burq.ai; builds AI, agents, evals and decision systems." src="light_mode.svg" width="985">
+</picture>
+
 #### Start here
 
 | Repo | What it shows |
