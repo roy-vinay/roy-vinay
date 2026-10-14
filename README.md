@@ -4,6 +4,11 @@ I'm an AI and product leader. I build, evaluate, and ship AI decision systems ac
 
 My projects explore what it takes to move AI from demos into production: evaluation, tool use, guardrails, human oversight, and decision quality. Each one starts the same way: a real problem, the smallest version that works, evals on the behavior that matters, and a write-up of the trade-offs.
 
+**▶️ 74-second walkthrough**
+
+https://github.com/user-attachments/assets/59dd167e-04f4-46d6-83a1-887d91a94747
+
+
 #### Start here
 
 | Repo | What it shows |
