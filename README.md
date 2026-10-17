@@ -31,20 +31,33 @@ https://github.com/user-attachments/assets/59dd167e-04f4-46d6-83a1-887d91a94747
 
 #### Writing
 
-<table><tr>
-<td><a href="https://vinayroy.substack.com/p/the-retrospective-rewired-how-to"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-retros-rewired-dark.svg"><img src="cards/article-retros-rewired-light.svg" width="280" alt="The Retrospective, Rewired: How to Run Retros When Agents Write the Code, on Substack"></picture></a></td>
-<td><a href="https://vinayroy.substack.com/p/ai-didnt-take-the-product-job-it"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-product-job-dark.svg"><img src="cards/article-product-job-light.svg" width="280" alt="AI Didn't Take the Product Job. It Took Our Excuse., on Substack"></picture></a></td>
-<td><a href="https://vinaysays.medium.com/when-your-teams-coding-agents-start-stepping-on-each-other-c6fd4c0f44aa"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-agents-stepping-dark.svg"><img src="cards/article-agents-stepping-light.svg" width="280" alt="When Your Team's Coding Agents Start Stepping on Each Other, on Medium"></picture></a></td>
-<td><a href="https://vinayroy.substack.com/p/more-claude-code-sessions-made-me"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-claude-sessions-dark.svg"><img src="cards/article-claude-sessions-light.svg" width="280" alt="More Claude Code Sessions Made Me Ship Less. Here's What Fixed It., on Substack"></picture></a></td>
-<td><a href="https://vinaysays.medium.com/building-ai-agents-that-survive-production-5bbb2257ba0a"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-survive-production-dark.svg"><img src="cards/article-survive-production-light.svg" width="280" alt="Building AI Agents That Survive Production, on Medium"></picture></a></td>
-<td><a href="https://vinayroy.substack.com/p/same-team-10x-the-output-how-pms"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-10x-pms-dark.svg"><img src="cards/article-10x-pms-light.svg" width="280" alt="Same Team, 10x the Output: How PMs Become 10x with AI, on Substack"></picture></a></td>
-<td><a href="https://vinayroy.substack.com/p/harness-engineering-the-last-guide-you-need-b0a5708b93b5"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-harness-engineering-dark.svg"><img src="cards/article-harness-engineering-light.svg" width="280" alt="Harness Engineering: The Last Guide You Need, on Substack"></picture></a></td>
-<td><a href="https://vinayroy.substack.com/p/the-pms-agent-stack-what-i-delegate-to-agents-vs-keep-human-6947b51f3416"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-pm-agent-stack-dark.svg"><img src="cards/article-pm-agent-stack-light.svg" width="280" alt="The PM's Agent Stack: What I Delegate to Agents vs. Keep Human, on Substack"></picture></a></td>
-<td><a href="https://vinayroy.substack.com/p/the-future-of-knowledge-is-a-graph-824847e16e74"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-knowledge-graph-dark.svg"><img src="cards/article-knowledge-graph-light.svg" width="280" alt="The Future of Knowledge Is a Graph, on Substack"></picture></a></td>
-<td><a href="https://vinayroy.substack.com/p/claude-code-subagents-vs-agent-teams-54cacb96f6c0"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-subagents-teams-dark.svg"><img src="cards/article-subagents-teams-light.svg" width="280" alt="Claude Code: Subagents vs Agent Teams, on Substack"></picture></a></td>
-</tr></table>
+<p>
+<a href="https://vinayroy.substack.com/p/the-retrospective-rewired-how-to"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-retros-rewired-dark.svg"><img src="cards/article-retros-rewired-light.svg" width="32%" alt="The Retrospective, Rewired: How to Run Retros When Agents Write the Code, on Substack"></picture></a>
+<a href="https://vinayroy.substack.com/p/ai-didnt-take-the-product-job-it"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-product-job-dark.svg"><img src="cards/article-product-job-light.svg" width="32%" alt="AI Didn't Take the Product Job. It Took Our Excuse., on Substack"></picture></a>
+<a href="https://vinaysays.medium.com/when-your-teams-coding-agents-start-stepping-on-each-other-c6fd4c0f44aa"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-agents-stepping-dark.svg"><img src="cards/article-agents-stepping-light.svg" width="32%" alt="When Your Team's Coding Agents Start Stepping on Each Other, on Medium"></picture></a>
+</p>
 
-Scroll sideways for more. Everything is on Substack at [Vinay Roy's Objective Function](https://vinayroy.substack.com), and on [Medium](https://vinaysays.medium.com).
+<p>
+<a href="https://vinayroy.substack.com/p/more-claude-code-sessions-made-me"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-claude-sessions-dark.svg"><img src="cards/article-claude-sessions-light.svg" width="32%" alt="More Claude Code Sessions Made Me Ship Less. Here's What Fixed It., on Substack"></picture></a>
+<a href="https://vinaysays.medium.com/building-ai-agents-that-survive-production-5bbb2257ba0a"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-survive-production-dark.svg"><img src="cards/article-survive-production-light.svg" width="32%" alt="Building AI Agents That Survive Production, on Medium"></picture></a>
+<a href="https://vinayroy.substack.com/p/same-team-10x-the-output-how-pms"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-10x-pms-dark.svg"><img src="cards/article-10x-pms-light.svg" width="32%" alt="Same Team, 10x the Output: How PMs Become 10x with AI, on Substack"></picture></a>
+</p>
+
+<details><summary>4 more articles</summary>
+
+<p>
+<a href="https://vinayroy.substack.com/p/harness-engineering-the-last-guide-you-need-b0a5708b93b5"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-harness-engineering-dark.svg"><img src="cards/article-harness-engineering-light.svg" width="32%" alt="Harness Engineering: The Last Guide You Need, on Substack"></picture></a>
+<a href="https://vinayroy.substack.com/p/the-pms-agent-stack-what-i-delegate-to-agents-vs-keep-human-6947b51f3416"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-pm-agent-stack-dark.svg"><img src="cards/article-pm-agent-stack-light.svg" width="32%" alt="The PM's Agent Stack: What I Delegate to Agents vs. Keep Human, on Substack"></picture></a>
+<a href="https://vinayroy.substack.com/p/the-future-of-knowledge-is-a-graph-824847e16e74"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-knowledge-graph-dark.svg"><img src="cards/article-knowledge-graph-light.svg" width="32%" alt="The Future of Knowledge Is a Graph, on Substack"></picture></a>
+</p>
+
+<p>
+<a href="https://vinayroy.substack.com/p/claude-code-subagents-vs-agent-teams-54cacb96f6c0"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-subagents-teams-dark.svg"><img src="cards/article-subagents-teams-light.svg" width="32%" alt="Claude Code: Subagents vs Agent Teams, on Substack"></picture></a>
+</p>
+
+</details>
+
+Everything is on Substack at [Vinay Roy's Objective Function](https://vinayroy.substack.com), and on [Medium](https://vinaysays.medium.com).
 
 #### About
 
