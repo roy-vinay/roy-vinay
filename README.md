@@ -18,7 +18,7 @@ https://github.com/user-attachments/assets/59dd167e-04f4-46d6-83a1-887d91a94747
 | [applied-ai-agents](https://github.com/roy-vinay/applied-ai-agents) | Working agents with guardrails and evals, including a fault-injection benchmark: the same agent with guards off vs on across 7 failure types, 100 trials each. Also home to **[Failure Files](https://github.com/roy-vinay/applied-ai-agents/tree/main/failure-files)**, public AI failures reproduced and the fixes measured. |
 | [enterprise-ai-platform](https://github.com/roy-vinay/enterprise-ai-platform) | An eval pipeline for BI chat bots that measures when they should stay quiet: trap questions that should be refused or clarified, consistency tests that need no answer key, and mutation testing of the semantic model, with results from two real models. |
 
-**Read the reasoning**
+**Decisions and practices**
 
 | Repo | What it shows |
 | --- | --- |
