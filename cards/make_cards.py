@@ -19,29 +19,35 @@ THEMES = {
 
 CARDS = [
     ("applied-ai-agents", "Build and evaluate", "Applied AI Agents",
-     ["Agents with guardrails and evals, plus Failure Files:",
-      "public AI incidents reproduced and the fixes measured."],
-     "Duplicate payments under fault injection: 79/100 without guards, 0/100 with."),
+     ["Agents with guardrails and evals, plus Failure",
+      "Files: public AI incidents reproduced and the",
+      "fixes measured."],
+     "Duplicate payments: 79/100 unguarded, 0/100 guarded."),
     ("enterprise-ai-platform", "Build and evaluate", "Enterprise AI Platform",
-     ["Evals for BI chat bots that test when a bot should",
-      "answer, refuse, or ask, with results from two real models."],
-     "Trap questions, consistency tests, and semantic-model mutation testing."),
+     ["Evals for BI chat bots that test when a bot",
+      "should answer, refuse, or ask, with results",
+      "from two real models."],
+     "Trap questions, consistency, mutation testing."),
     ("ai-decision-log", "Decisions and practices", "AI Decision Log",
-     ["One-page memos on applied AI product choices: the",
-      "options, the numbers, and what would change the answer."],
-     "Latest: D-003, when should a BI bot answer, and when should it stay quiet?"),
+     ["One-page memos on applied AI product choices:",
+      "the options, the numbers, and what would",
+      "change the answer."],
+     "Latest: when should a BI bot stay quiet?"),
     ("claude-code-team-playbook", "Decisions and practices", "Claude Code Team Playbook",
-     ["Run several coding agents like a small team. Claim Before",
-      "Code sends overlapping edits to the owner, not a merge conflict."],
-     "Starter files, specs, and a rework log you can copy."),
+     ["Run several coding agents like a small team.",
+      "Claim Before Code sends overlapping edits to",
+      "the owner, not a merge conflict."],
+     "Starter files, specs, and a rework log."),
     ("mdeditdiff", "Try the tools", "mdEditDiff",
-     ["A Markdown editor for people and a change diff for agents:",
-      "agents see only what changed since they last looked."],
-     "Mac app, CLI, and MCP server. Free and open source."),
+     ["A Markdown editor for people and a change diff",
+      "for agents: agents see only what changed since",
+      "they last looked."],
+     "Mac app, CLI, and MCP server. Free, MIT."),
     ("tech60", "Try the tools", "Tech60",
-     ["A tech news front page for the Mac desktop: only stories",
-      "with real signal, each with a short on-device summary."],
-     "Summaries must pass rule-based checks against the source."),
+     ["A tech news front page for the Mac desktop:",
+      "only stories with real signal, each with a",
+      "short on-device summary."],
+     "Summaries must pass checks against the source."),
 ]
 
 
@@ -55,18 +61,18 @@ def ring(cx, cy, r, width, fraction, color, track):
 
 
 def card(slug, kicker, title, lines, evidence, t):
-    w, h = 560, 214
+    # The section heading above each pair already names the group, so the card leads with its title.
+    w, h = 480, 224
     body = "".join(
-        f'<text x="32" y="{116 + i * 23}" font-family="{SANS}" font-size="15.5" fill="{t["body"]}">{escape(l)}</text>'
+        f'<text x="28" y="{100 + i * 25}" font-family="{SANS}" font-size="17" fill="{t["body"]}">{escape(l)}</text>'
         for i, l in enumerate(lines))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}: {escape(" ".join(lines))}">
 <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{t["bg"]}" stroke="{t["border"]}"/>
-{ring(w - 44, 44, 13, 3.5, 0.82, t["accent"], t["track"])}
-<text x="32" y="46" font-family="{SANS}" font-size="13" font-weight="600" fill="{t["accent"]}">{escape(kicker)}</text>
-<text x="32" y="84" font-family="{SERIF}" font-size="28" font-weight="700" fill="{t["ink"]}">{escape(title)}</text>
+{ring(w - 40, 44, 12, 3.5, 0.82, t["accent"], t["track"])}
+<text x="28" y="56" font-family="{SERIF}" font-size="29" font-weight="700" fill="{t["ink"]}">{escape(title)}</text>
 {body}
-<line x1="32" y1="168" x2="{w - 32}" y2="168" stroke="{t["border"]}"/>
-<text x="32" y="194" font-family="{SANS}" font-size="13" fill="{t["muted"]}">{escape(evidence)}</text>
+<line x1="28" y1="178" x2="{w - 28}" y2="178" stroke="{t["border"]}"/>
+<text x="28" y="204" font-family="{SANS}" font-size="15" font-weight="600" fill="{t["accent"]}">{escape(evidence)}</text>
 </svg>
 '''
 
@@ -82,8 +88,8 @@ def banner(t):
 <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t["bg"]}" stroke="{t["border"]}"/>
 <text x="56" y="128" font-family="{SERIF}" font-size="76" font-weight="700" fill="{t["ink"]}" letter-spacing="-1">Vinay Roy</text>
 <rect x="58" y="150" width="64" height="4" rx="2" fill="{t["accent"]}"/>
-<text x="56" y="196" font-family="{SANS}" font-size="25" fill="{t["ink"]}">I build, evaluate, and ship AI decision systems.</text>
-<text x="56" y="232" font-family="{SANS}" font-size="16.5" fill="{t["muted"]}">VP of Product at Burq.ai. Seven years teaching AI and ML strategy at UC Berkeley Executive Education.</text>
+<text x="56" y="196" font-family="{SANS}" font-size="29" fill="{t["ink"]}">I build, evaluate, and ship AI decision systems.</text>
+<text x="56" y="232" font-family="{SANS}" font-size="19" fill="{t["muted"]}">VP of Product at Burq.ai. Seven years teaching AI strategy at UC Berkeley Exec Ed.</text>
 {rings}
 </svg>
 '''
