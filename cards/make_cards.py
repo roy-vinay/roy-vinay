@@ -80,29 +80,28 @@ def card(slug, kicker, title, lines, evidence, t):
 
 
 def banner(t):
-    # A newspaper masthead: dateline strip, the name as nameplate, double rule, four short columns.
-    w, h = 1200, 280
+    # A newspaper masthead with no card around it, so it sits flush with the README text below.
+    w, h = 1200, 236
     cols = [("Today", ["VP of Product at Burq.ai,", "leading Product and AI"]),
-            ("On GitHub", ["AI systems and agents, built", "and measured in public"]),
+            ("On GitHub", ["AI systems and agents,", "built and measured in public"]),
             ("Writing", ["Field notes on shipping AI,", "on Substack and Medium"]),
             ("Teaching", ["AI strategy for 10,000+", "leaders at Berkeley Exec Ed"])]
     parts = []
     for i, (label, lines) in enumerate(cols):
-        x = 56 + i * 274
+        x = i * 306
         if i:
-            parts.append(f'<line x1="{x - 16}" y1="192" x2="{x - 16}" y2="256" stroke="{t["border"]}"/>')
-        parts.append(f'<text x="{x}" y="204" font-family="{SANS}" font-size="13" font-weight="700" fill="{t["accent"]}">{label}</text>')
+            parts.append(f'<line x1="{x - 20}" y1="160" x2="{x - 20}" y2="228" stroke="{t["border"]}"/>')
+        parts.append(f'<text x="{x}" y="174" font-family="{SANS}" font-size="14" font-weight="700" fill="{t["accent"]}">{label}</text>')
         for j, l in enumerate(lines):
-            parts.append(f'<text x="{x}" y="{228 + j * 23}" font-family="{SERIF}" font-size="18" font-weight="700" fill="{t["ink"]}">{escape(l)}</text>')
+            parts.append(f'<text x="{x}" y="{199 + j * 24}" font-family="{SERIF}" font-size="19" font-weight="700" fill="{t["ink"]}">{escape(l)}</text>')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Vinay Roy. AI systems and agents. VP of Product at Burq.ai, leading Product and AI. On GitHub: AI systems and agents, built and measured in public. Writing on Substack and Medium. Teaching AI strategy to 10,000+ leaders at Berkeley Exec Ed.">
-<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t["bg"]}" stroke="{t["border"]}"/>
-<text x="56" y="46" font-family="{SANS}" font-size="15" fill="{t["muted"]}">San Jose, California</text>
-<text x="600" y="46" text-anchor="middle" font-family="{SANS}" font-size="15" font-weight="600" fill="{t["ink"]}">AI systems and agents</text>
-<text x="1144" y="46" text-anchor="end" font-family="{SANS}" font-size="15" fill="{t["muted"]}">Building since 2008</text>
-<line x1="56" y1="60" x2="1144" y2="60" stroke="{t["ink"]}"/>
-<text x="600" y="144" text-anchor="middle" font-family="{SERIF}" font-size="76" font-weight="700" letter-spacing="-1.5" fill="{t["ink"]}">Vinay Roy</text>
-<line x1="56" y1="166" x2="1144" y2="166" stroke="{t["ink"]}"/>
-<line x1="56" y1="170" x2="1144" y2="170" stroke="{t["ink"]}"/>
+<text x="0" y="18" font-family="{SANS}" font-size="16" fill="{t["muted"]}">San Jose, California</text>
+<text x="600" y="18" text-anchor="middle" font-family="{SANS}" font-size="16" font-weight="600" fill="{t["ink"]}">AI systems and agents</text>
+<text x="1200" y="18" text-anchor="end" font-family="{SANS}" font-size="16" fill="{t["muted"]}">Building since 2008</text>
+<line x1="0" y1="32" x2="1200" y2="32" stroke="{t["ink"]}"/>
+<text x="600" y="116" text-anchor="middle" font-family="{SERIF}" font-size="80" font-weight="700" letter-spacing="-1.5" fill="{t["ink"]}">Vinay Roy</text>
+<line x1="0" y1="138" x2="1200" y2="138" stroke="{t["ink"]}"/>
+<line x1="0" y1="142" x2="1200" y2="142" stroke="{t["ink"]}"/>
 {"".join(parts)}
 </svg>
 '''

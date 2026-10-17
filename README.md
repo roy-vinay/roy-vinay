@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="cards/banner-dark.svg?v=mast">
-  <img src="cards/banner-light.svg?v=mast" width="100%" alt="Vinay Roy. AI systems and agents. VP of Product at Burq.ai, leading Product and AI. Building since 2008.">
+  <source media="(prefers-color-scheme: dark)" srcset="cards/banner-dark.svg?v=flush">
+  <img src="cards/banner-light.svg?v=flush" width="100%" alt="Vinay Roy. AI systems and agents. VP of Product at Burq.ai, leading Product and AI. Building since 2008.">
 </picture>
 
 I'm an AI and product leader. I build, evaluate, and ship AI decision systems across B2B SaaS and marketplaces, and study what transfers between them.
