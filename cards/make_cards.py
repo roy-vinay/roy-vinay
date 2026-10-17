@@ -92,10 +92,20 @@ def banner(t):
 '''
 
 
-ARTICLES = [
-    ("article-agents-stepping", "Medium", ["When Your Team's Coding", "Agents Start Stepping on", "Each Other"]),
-    ("article-claude-sessions", "Substack", ["More Claude Code Sessions", "Made Me Ship Less. Here's", "What Fixed It."]),
-    ("article-survive-production", "Medium", ["Building AI Agents That", "Survive Production"]),
+S = "https://vinayroy.substack.com/p/"
+ARTICLES = [  # newest first; (slug, outlet, title lines, url)
+    ("article-retros-rewired", "Substack", ["The Retrospective,", "Rewired: How to Run Retros", "When Agents Write the Code"], S + "the-retrospective-rewired-how-to"),
+    ("article-product-job", "Substack", ["AI Didn't Take the", "Product Job. It Took", "Our Excuse."], S + "ai-didnt-take-the-product-job-it"),
+    ("article-agents-stepping", "Medium", ["When Your Team's Coding", "Agents Start Stepping on", "Each Other"],
+     "https://vinaysays.medium.com/when-your-teams-coding-agents-start-stepping-on-each-other-c6fd4c0f44aa"),
+    ("article-claude-sessions", "Substack", ["More Claude Code Sessions", "Made Me Ship Less. Here's", "What Fixed It."], S + "more-claude-code-sessions-made-me"),
+    ("article-survive-production", "Medium", ["Building AI Agents That", "Survive Production"],
+     "https://vinaysays.medium.com/building-ai-agents-that-survive-production-5bbb2257ba0a"),
+    ("article-10x-pms", "Substack", ["Same Team, 10x the Output:", "How PMs Become 10x", "with AI"], S + "same-team-10x-the-output-how-pms"),
+    ("article-harness-engineering", "Substack", ["Harness Engineering:", "The Last Guide You Need"], S + "harness-engineering-the-last-guide-you-need-b0a5708b93b5"),
+    ("article-pm-agent-stack", "Substack", ["The PM's Agent Stack:", "What I Delegate to Agents", "vs. Keep Human"], S + "the-pms-agent-stack-what-i-delegate-to-agents-vs-keep-human-6947b51f3416"),
+    ("article-knowledge-graph", "Substack", ["The Future of Knowledge", "Is a Graph"], S + "the-future-of-knowledge-is-a-graph-824847e16e74"),
+    ("article-subagents-teams", "Substack", ["Claude Code: Subagents", "vs Agent Teams"], S + "claude-code-subagents-vs-agent-teams-54cacb96f6c0"),
 ]
 
 
@@ -154,9 +164,23 @@ def about(t):
 
 for name, t in THEMES.items():
     (OUT / f"about-{name}.svg").write_text(about(t))
-    for slug, pub, lines in ARTICLES:
+    for slug, pub, lines, _url in ARTICLES:
         (OUT / f"{slug}-{name}.svg").write_text(article(pub, lines, t, f"{slug}-{name}"))
     (OUT / f"banner-{name}.svg").write_text(banner(t))
     for slug, *rest in CARDS:
         (OUT / f"{slug}-{name}.svg").write_text(card(slug, *rest, t))
 print("Wrote", len(list(OUT.glob("*.svg"))), "SVGs")
+
+
+def writing_row():
+    """The README's Writing row: one HTML table row, which GitHub scrolls sideways when it's wider than the page."""
+    cells = []
+    for slug, pub, lines, url in ARTICLES:
+        alt = escape(" ".join(lines)) + f", on {pub}"
+        cells.append(f'<td><a href="{url}"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/{slug}-dark.svg">'
+                     f'<img src="cards/{slug}-light.svg" width="280" alt="{alt}"></picture></a></td>')
+    return "<table><tr>\n" + "\n".join(cells) + "\n</tr></table>"
+
+
+if __name__ == "__main__":
+    (OUT / "writing-row.html").write_text(writing_row() + "\n")
