@@ -61,20 +61,13 @@ Everything is on Substack at [Vinay Roy's Objective Function](https://vinayroy.s
 
 #### About
 
-<a href="https://www.linkedin.com/in/royvinay"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/about-dark.svg"><img src="cards/about-light.svg" width="100%" alt="About Vinay Roy: VP of Product at Burq.ai, leading Product, Design and AI. Career from NVIDIA (2008), Qualcomm, Apple (Sidecar), Zeus Living, Vista, and a founding product role at an AI SaaS startup, to Burq.ai. Seven years as Head Instructor for the AI/ML executive program at UC Berkeley Executive Education. 3 US patents, MBA from Berkeley Haas, MS from IIT Roorkee."></picture></a>
+<a href="https://www.linkedin.com/in/royvinay"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/about-dark.svg"><img src="cards/about-light.svg" width="100%" alt="About Vinay Roy: VP of Product at Burq.ai, leading Product and AI. Career from NVIDIA (2008), Qualcomm, Apple (Sidecar), Zeus Living, Vista, and a founding product role at an AI SaaS startup, to Burq.ai. Seven years as Head Instructor for the AI/ML executive program at UC Berkeley Executive Education. 3 US patents, MBA from Berkeley Haas, MS from IIT Roorkee."></picture></a>
 
-[Burq.ai](https://burq.ai) · [LinkedIn](https://www.linkedin.com/in/royvinay)
-
-<details>
-<summary>Full bio</summary>
-
-VP of Product at [Burq.ai](https://burq.ai), leading Product, Design and AI.
+VP of Product at [Burq.ai](https://burq.ai), leading Product and AI.
 
 Before Burq, I was the founding product leader at an AI SaaS startup, taking it from zero to product-market fit and building multi-agent systems in production. Before that, I led a global team of about 80 across Product, Data Science and Analytics at Vista, the private aviation group behind VistaJet and XO. Earlier: marketplace growth at Zeus Living, macOS and iOS features at Apple (including Sidecar), and engineering teams at Qualcomm and NVIDIA.
 
 For seven years I was Head Instructor for the AI/ML executive program at UC Berkeley Executive Education, teaching more than 10,000 business leaders. 3 US patents, MBA from Berkeley Haas, MS from IIT Roorkee. San Jose, CA.
-
-</details>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg">
