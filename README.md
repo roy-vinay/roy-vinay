@@ -19,15 +19,21 @@ https://github.com/user-attachments/assets/59dd167e-04f4-46d6-83a1-887d91a94747
 <a href="https://github.com/roy-vinay/applied-ai-agents"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/applied-ai-agents-dark.svg?v=ink"><img src="cards/applied-ai-agents-light.svg?v=ink" width="49%" alt="Applied AI Agents: agents with guardrails and evals, plus Failure Files"></picture></a>
 <a href="https://github.com/roy-vinay/enterprise-ai-platform"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/enterprise-ai-platform-dark.svg?v=ink"><img src="cards/enterprise-ai-platform-light.svg?v=ink" width="49%" alt="Enterprise AI Platform: evals for BI chat bots"></picture></a>
 
+[Applied AI Agents](https://github.com/roy-vinay/applied-ai-agents) · [Enterprise AI Platform](https://github.com/roy-vinay/enterprise-ai-platform)
+
 **Decisions and practices**
 
 <a href="https://github.com/roy-vinay/ai-decision-log"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/ai-decision-log-dark.svg?v=ink"><img src="cards/ai-decision-log-light.svg?v=ink" width="49%" alt="AI Decision Log: one-page memos on applied AI product choices"></picture></a>
 <a href="https://github.com/roy-vinay/claude-code-team-playbook"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/claude-code-team-playbook-dark.svg?v=ink"><img src="cards/claude-code-team-playbook-light.svg?v=ink" width="49%" alt="Claude Code Team Playbook: run several coding agents like a small team"></picture></a>
 
+[AI Decision Log](https://github.com/roy-vinay/ai-decision-log) · [Claude Code Team Playbook](https://github.com/roy-vinay/claude-code-team-playbook)
+
 **Try the tools**
 
 <a href="https://github.com/roy-vinay/mdeditdiff"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/mdeditdiff-dark.svg?v=ink"><img src="cards/mdeditdiff-light.svg?v=ink" width="49%" alt="mdEditDiff: a Markdown editor for people and a change diff for agents"></picture></a>
-<a href="https://github.com/roy-vinay/applied-ai-agents/tree/main/tools/tech60"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/tech60-dark.svg?v=ink"><img src="cards/tech60-light.svg?v=ink" width="49%" alt="Tech60: a tech news front page for the Mac desktop"></picture></a>
+<a href="https://github.com/roy-vinay/applied-ai-agents/tree/main/tools/tech60"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/tech60-dark.svg?v=experimental"><img src="cards/tech60-light.svg?v=experimental" width="49%" alt="Tech60: a tech news front page for the Mac desktop"></picture></a>
+
+[mdEditDiff](https://github.com/roy-vinay/mdeditdiff) · [Tech60](https://github.com/roy-vinay/applied-ai-agents/tree/main/tools/tech60) — experimental summaries
 
 #### Writing
 
@@ -37,11 +43,19 @@ https://github.com/user-attachments/assets/59dd167e-04f4-46d6-83a1-887d91a94747
 <a href="https://vinaysays.medium.com/when-your-teams-coding-agents-start-stepping-on-each-other-c6fd4c0f44aa"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-agents-stepping-dark.svg"><img src="cards/article-agents-stepping-light.svg" width="32%" alt="When Your Team's Coding Agents Start Stepping on Each Other, on Medium"></picture></a>
 </p>
 
+- [The Retrospective, Rewired: How to Run Retros When Agents Write the Code](https://vinayroy.substack.com/p/the-retrospective-rewired-how-to)
+- [AI Didn't Take the Product Job. It Took Our Excuse.](https://vinayroy.substack.com/p/ai-didnt-take-the-product-job-it)
+- [When Your Team's Coding Agents Start Stepping on Each Other](https://vinaysays.medium.com/when-your-teams-coding-agents-start-stepping-on-each-other-c6fd4c0f44aa)
+
 <p>
 <a href="https://vinayroy.substack.com/p/more-claude-code-sessions-made-me"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-claude-sessions-dark.svg"><img src="cards/article-claude-sessions-light.svg" width="32%" alt="More Claude Code Sessions Made Me Ship Less. Here's What Fixed It., on Substack"></picture></a>
 <a href="https://vinaysays.medium.com/building-ai-agents-that-survive-production-5bbb2257ba0a"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-survive-production-dark.svg"><img src="cards/article-survive-production-light.svg" width="32%" alt="Building AI Agents That Survive Production, on Medium"></picture></a>
 <a href="https://vinayroy.substack.com/p/same-team-10x-the-output-how-pms"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-10x-pms-dark.svg"><img src="cards/article-10x-pms-light.svg" width="32%" alt="Same Team, 10x the Output: How PMs Become 10x with AI, on Substack"></picture></a>
 </p>
+
+- [More Claude Code Sessions Made Me Ship Less. Here's What Fixed It.](https://vinayroy.substack.com/p/more-claude-code-sessions-made-me)
+- [Building AI Agents That Survive Production](https://vinaysays.medium.com/building-ai-agents-that-survive-production-5bbb2257ba0a)
+- [Same Team, 10x the Output: How PMs Become 10x with AI](https://vinayroy.substack.com/p/same-team-10x-the-output-how-pms)
 
 <details><summary>4 more articles</summary>
 
@@ -51,9 +65,15 @@ https://github.com/user-attachments/assets/59dd167e-04f4-46d6-83a1-887d91a94747
 <a href="https://vinayroy.substack.com/p/the-future-of-knowledge-is-a-graph-824847e16e74"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-knowledge-graph-dark.svg"><img src="cards/article-knowledge-graph-light.svg" width="32%" alt="The Future of Knowledge Is a Graph, on Substack"></picture></a>
 </p>
 
+- [Harness Engineering: The Last Guide You Need](https://vinayroy.substack.com/p/harness-engineering-the-last-guide-you-need-b0a5708b93b5)
+- [The PM's Agent Stack: What I Delegate to Agents vs. Keep Human](https://vinayroy.substack.com/p/the-pms-agent-stack-what-i-delegate-to-agents-vs-keep-human-6947b51f3416)
+- [The Future of Knowledge Is a Graph](https://vinayroy.substack.com/p/the-future-of-knowledge-is-a-graph-824847e16e74)
+
 <p>
 <a href="https://vinayroy.substack.com/p/claude-code-subagents-vs-agent-teams-54cacb96f6c0"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-subagents-teams-dark.svg"><img src="cards/article-subagents-teams-light.svg" width="32%" alt="Claude Code: Subagents vs Agent Teams, on Substack"></picture></a>
 </p>
+
+- [Claude Code: Subagents vs Agent Teams](https://vinayroy.substack.com/p/claude-code-subagents-vs-agent-teams-54cacb96f6c0)
 
 </details>
 
