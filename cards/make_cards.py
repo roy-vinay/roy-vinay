@@ -181,7 +181,7 @@ for name, t in THEMES.items():
     (OUT / f"about-{name}.svg").write_text(about(t))
     for slug, pub, lines, _url in ARTICLES:
         (OUT / f"{slug}-{name}.svg").write_text(article(pub, lines, t, f"{slug}-{name}"))
-    (OUT / f"banner-{name}.svg").write_text(banner(t))
+    (OUT / f"masthead-{name}.svg").write_text(banner(t))
     for slug, *rest in CARDS:
         (OUT / f"{slug}-{name}.svg").write_text(card(f"{slug}-{name}", *rest, t))
 print("Wrote", len(list(OUT.glob("*.svg"))), "SVGs")
