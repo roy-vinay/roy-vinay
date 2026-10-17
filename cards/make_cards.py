@@ -78,19 +78,16 @@ def card(slug, kicker, title, lines, evidence, t):
 
 
 def banner(t):
+    # An article header: section label, a two-line serif headline, and a byline.
     w, h = 1200, 280
-    rings = "".join([
-        ring(1040, 140, 96, 10, 0.86, t["accent"], t["track"]),
-        ring(1040, 140, 72, 10, 0.62, t["ink"], t["track"]),
-        ring(1040, 140, 48, 10, 0.38, t["muted"], t["track"]),
-    ])
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Vinay Roy. I build, evaluate, and ship AI decision systems.">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Moving AI from demos into production, one measured failure at a time. By Vinay Roy, VP of Product at Burq.ai.">
 <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t["bg"]}" stroke="{t["border"]}"/>
-<text x="56" y="128" font-family="{SERIF}" font-size="76" font-weight="700" fill="{t["ink"]}" letter-spacing="-1">Vinay Roy</text>
-<rect x="58" y="150" width="64" height="4" rx="2" fill="{t["accent"]}"/>
-<text x="56" y="196" font-family="{SANS}" font-size="29" fill="{t["ink"]}">I build, evaluate, and ship AI decision systems.</text>
-<text x="56" y="232" font-family="{SANS}" font-size="19" fill="{t["muted"]}">VP of Product at Burq.ai. Seven years teaching AI strategy at UC Berkeley Exec Ed.</text>
-{rings}
+<text x="60" y="64" font-family="{SANS}" font-size="17" font-weight="700" fill="{t["accent"]}">Applied AI</text>
+<text x="60" y="124" font-family="{SERIF}" font-size="50" font-weight="700" letter-spacing="-0.8" fill="{t["ink"]}">Moving AI from demos into production,</text>
+<text x="60" y="182" font-family="{SERIF}" font-size="50" font-weight="700" letter-spacing="-0.8" fill="{t["ink"]}">one measured failure at a time</text>
+<circle cx="80" cy="231" r="20" fill="{t["ink"]}"/>
+<text x="80" y="237" text-anchor="middle" font-family="{SERIF}" font-size="16" font-weight="700" fill="{t["bg"]}">VR</text>
+<text x="112" y="238" font-family="{SANS}" font-size="20" fill="{t["muted"]}">By <tspan font-weight="700" fill="{t["ink"]}">Vinay Roy</tspan>, VP of Product at Burq.ai</text>
 </svg>
 '''
 

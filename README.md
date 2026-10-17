@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="cards/banner-dark.svg">
-  <img src="cards/banner-light.svg" width="100%" alt="Vinay Roy. I build, evaluate, and ship AI decision systems. VP of Product at Burq.ai.">
+  <img src="cards/banner-light.svg" width="100%" alt="Moving AI from demos into production, one measured failure at a time. By Vinay Roy, VP of Product at Burq.ai.">
 </picture>
 
 I'm an AI and product leader. I build, evaluate, and ship AI decision systems across B2B SaaS and marketplaces, and study what transfers between them.
