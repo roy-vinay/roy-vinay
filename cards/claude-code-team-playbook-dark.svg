@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="214" viewBox="0 0 560 214" role="img" aria-label="Claude Code Team Playbook: Run several coding agents like a small team. Claim Before Code sends overlapping edits to the owner, not a merge conflict.">
+<rect x="0.5" y="0.5" width="559" height="213" rx="14" fill="#161B22" stroke="#30363D"/>
+<circle cx="516" cy="44" r="13" fill="none" stroke="#262C36" stroke-width="3.5"/><circle cx="516" cy="44" r="13" fill="none" stroke="#FF8A3D" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="67.0 81.7" transform="rotate(-90 516 44)"/>
+<text x="32" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#FF8A3D">Decisions and practices</text>
+<text x="32" y="84" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" fill="#E6EDF3">Claude Code Team Playbook</text>
+<text x="32" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" fill="#C9D1D9">Run several coding agents like a small team. Claim Before</text><text x="32" y="139" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" fill="#C9D1D9">Code sends overlapping edits to the owner, not a merge conflict.</text>
+<line x1="32" y1="168" x2="528" y2="168" stroke="#30363D"/>
+<text x="32" y="194" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#9198A1">Starter files, specs, and a rework log you can copy.</text>
+</svg>
