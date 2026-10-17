@@ -173,14 +173,19 @@ print("Wrote", len(list(OUT.glob("*.svg"))), "SVGs")
 
 
 def writing_row():
-    """The README's Writing row: one HTML table row, which GitHub scrolls sideways when it's wider than the page."""
-    cells = []
-    for slug, pub, lines, url in ARTICLES:
+    """The README's Writing grid. GitHub shrinks images in a wide table instead of scrolling it,
+    so tiles go three to a row: the newest six show, the rest sit in a collapsed list."""
+    def tile(slug, pub, lines, url):
         alt = escape(" ".join(lines)) + f", on {pub}"
-        cells.append(f'<td><a href="{url}"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/{slug}-dark.svg">'
-                     f'<img src="cards/{slug}-light.svg" width="280" alt="{alt}"></picture></a></td>')
-    return "<table><tr>\n" + "\n".join(cells) + "\n</tr></table>"
-
+        return (f'<a href="{url}"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/{slug}-dark.svg">'
+                f'<img src="cards/{slug}-light.svg" width="32%" alt="{alt}"></picture></a>')
+    def rows(items):
+        return "\n\n".join("<p>\n" + "\n".join(tile(*a) for a in items[i:i+3]) + "\n</p>" for i in range(0, len(items), 3))
+    shown, rest = ARTICLES[:6], ARTICLES[6:]
+    out = rows(shown)
+    if rest:
+        out += f"\n\n<details><summary>{len(rest)} more articles</summary>\n\n" + rows(rest) + "\n\n</details>"
+    return out
 
 if __name__ == "__main__":
     (OUT / "writing-row.html").write_text(writing_row() + "\n")
