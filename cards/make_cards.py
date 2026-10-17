@@ -92,7 +92,66 @@ def banner(t):
 '''
 
 
+ARTICLES = [
+    ("article-agents-stepping", "Medium", ["When Your Team's Coding", "Agents Start Stepping on", "Each Other"]),
+    ("article-claude-sessions", "Substack", ["More Claude Code Sessions", "Made Me Ship Less. Here's", "What Fixed It."]),
+    ("article-survive-production", "Medium", ["Building AI Agents That", "Survive Production"]),
+]
+
+
+def article(pub, lines, t):
+    w, h = 400, 210
+    title = "".join(
+        f'<text x="26" y="{84 + i * 30}" font-family="{SERIF}" font-size="22" font-weight="700" fill="{t["ink"]}">{escape(l)}</text>'
+        for i, l in enumerate(lines))
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(" ".join(lines))}, on {pub}">
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{t["bg"]}" stroke="{t["border"]}"/>
+<text x="26" y="44" font-family="{SANS}" font-size="15" font-weight="700" fill="{t["accent"]}">{pub}</text>
+{title}
+<text x="26" y="186" font-family="{SANS}" font-size="15" fill="{t["muted"]}">Read the article</text>
+</svg>
+'''
+
+
+TIMELINE = [("2008", "NVIDIA", "Engineering"), ("2012", "Qualcomm", "Engineering"), ("2015", "Apple", "Sidecar, macOS"),
+            ("2019", "Zeus Living", "Marketplace growth"), ("2020", "Vista", "Team of about 80"),
+            ("2024", "AI SaaS startup", "Founding product"), ("Now", "Burq.ai", "VP of Product")]
+
+
+def about(t):
+    w, h = 1200, 360
+    x0, x1 = 60, 1140
+    step = 154
+    stops = []
+    for i, (year, org, note) in enumerate(TIMELINE):
+        x = x0 + 8 + i * step
+        last = i == len(TIMELINE) - 1
+        anchor = "start"
+        tx = x - 8
+        color = t["accent"] if last else t["ink"]
+        dot = (f'<circle cx="{x:.0f}" cy="186" r="9" fill="{t["accent"]}"/>' if last else
+               f'<circle cx="{x:.0f}" cy="186" r="7" fill="{t["bg"]}" stroke="{t["ink"]}" stroke-width="2.5"/>')
+        stops.append(f'''{dot}
+<text x="{tx:.0f}" y="166" text-anchor="{anchor}" font-family="{SANS}" font-size="15" fill="{t["accent"] if last else t["muted"]}" font-weight="{700 if last else 400}">{year}</text>
+<text x="{tx:.0f}" y="220" text-anchor="{anchor}" font-family="{SANS}" font-size="18" font-weight="700" fill="{color}">{escape(org)}</text>
+<text x="{tx:.0f}" y="243" text-anchor="{anchor}" font-family="{SANS}" font-size="14" fill="{t["muted"]}">{escape(note)}</text>''')
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Career: NVIDIA 2008, Qualcomm 2012, Apple 2015 (Sidecar), Zeus Living 2019, Vista 2020, founding product lead at an AI SaaS startup 2024, now VP of Product at Burq.ai. Seven years as Head Instructor for the AI/ML executive program at UC Berkeley Executive Education, 10,000+ leaders. 3 US patents. MBA, Berkeley Haas. MS, IIT Roorkee.">
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t["bg"]}" stroke="{t["border"]}"/>
+<text x="60" y="64" font-family="{SANS}" font-size="17" font-weight="700" fill="{t["accent"]}">About</text>
+<text x="60" y="106" font-family="{SERIF}" font-size="32" font-weight="700" fill="{t["ink"]}">VP of Product at Burq.ai, leading Product, Design and AI.</text>
+<line x1="{x0 + 8}" y1="186" x2="{x0 + 8 + step * (len(TIMELINE) - 1):.0f}" y2="186" stroke="{t["border"]}" stroke-width="2"/>
+{"".join(stops)}
+<line x1="60" y1="282" x2="1140" y2="282" stroke="{t["border"]}"/>
+<text x="60" y="318" font-family="{SANS}" font-size="17" fill="{t["body"]}">Seven years as Head Instructor, AI/ML executive program, UC Berkeley Exec Ed, 10,000+ leaders.</text>
+<text x="60" y="342" font-family="{SANS}" font-size="17" fill="{t["muted"]}">3 US patents. MBA, Berkeley Haas. MS, IIT Roorkee. San Jose, CA.</text>
+</svg>
+'''
+
+
 for name, t in THEMES.items():
+    (OUT / f"about-{name}.svg").write_text(about(t))
+    for slug, pub, lines in ARTICLES:
+        (OUT / f"{slug}-{name}.svg").write_text(article(pub, lines, t))
     (OUT / f"banner-{name}.svg").write_text(banner(t))
     for slug, *rest in CARDS:
         (OUT / f"{slug}-{name}.svg").write_text(card(slug, *rest, t))

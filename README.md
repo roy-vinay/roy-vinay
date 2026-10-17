@@ -31,22 +31,28 @@ https://github.com/user-attachments/assets/59dd167e-04f4-46d6-83a1-887d91a94747
 
 #### Writing
 
-- [When Your Team's Coding Agents Start Stepping on Each Other](https://vinaysays.medium.com/when-your-teams-coding-agents-start-stepping-on-each-other-c6fd4c0f44aa)
-- [More Claude Code Sessions Made Me Ship Less. Here's What Fixed It.](https://vinayroy.substack.com/p/more-claude-code-sessions-made-me)
-- [Building AI Agents That Survive Production](https://vinaysays.medium.com/building-ai-agents-that-survive-production-5bbb2257ba0a)
-- Medium: [vinaysays.medium.com](https://vinaysays.medium.com)
-- Substack: [Vinay Roy's Objective Function](https://vinayroy.substack.com)
+<a href="https://vinaysays.medium.com/when-your-teams-coding-agents-start-stepping-on-each-other-c6fd4c0f44aa"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-agents-stepping-dark.svg"><img src="cards/article-agents-stepping-light.svg" width="32%" alt="When Your Team's Coding Agents Start Stepping on Each Other, on Medium"></picture></a>
+<a href="https://vinayroy.substack.com/p/more-claude-code-sessions-made-me"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-claude-sessions-dark.svg"><img src="cards/article-claude-sessions-light.svg" width="32%" alt="More Claude Code Sessions Made Me Ship Less. Here's What Fixed It., on Substack"></picture></a>
+<a href="https://vinaysays.medium.com/building-ai-agents-that-survive-production-5bbb2257ba0a"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/article-survive-production-dark.svg"><img src="cards/article-survive-production-light.svg" width="32%" alt="Building AI Agents That Survive Production, on Medium"></picture></a>
+
+More on [Medium](https://vinaysays.medium.com) and on Substack at [Vinay Roy's Objective Function](https://vinayroy.substack.com).
 
 #### About
 
+<a href="https://www.linkedin.com/in/royvinay"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/about-dark.svg"><img src="cards/about-light.svg" width="100%" alt="About Vinay Roy: VP of Product at Burq.ai, leading Product, Design and AI. Career from NVIDIA (2008), Qualcomm, Apple (Sidecar), Zeus Living, Vista, and a founding product role at an AI SaaS startup, to Burq.ai. Seven years as Head Instructor for the AI/ML executive program at UC Berkeley Executive Education. 3 US patents, MBA from Berkeley Haas, MS from IIT Roorkee."></picture></a>
+
+[Burq.ai](https://burq.ai) · [LinkedIn](https://www.linkedin.com/in/royvinay)
+
+<details>
+<summary>Full bio</summary>
+
 VP of Product at [Burq.ai](https://burq.ai), leading Product, Design and AI.
 
-Before Burq, I was the founding product leader at an AI SaaS startup, taking it from zero to product-market fit and building multi-agent systems in production. Before that, I led a global team of about 80 across Product, Data Science and Analytics at Vista, the private aviation group behind VistaJet and XO.<br>
-Earlier: marketplace growth at Zeus Living, macOS and iOS features at Apple (including Sidecar), and engineering teams at Qualcomm and NVIDIA.
+Before Burq, I was the founding product leader at an AI SaaS startup, taking it from zero to product-market fit and building multi-agent systems in production. Before that, I led a global team of about 80 across Product, Data Science and Analytics at Vista, the private aviation group behind VistaJet and XO. Earlier: marketplace growth at Zeus Living, macOS and iOS features at Apple (including Sidecar), and engineering teams at Qualcomm and NVIDIA.
 
-For seven years I was Head Instructor for the AI/ML executive program at UC Berkeley Executive Education, teaching more than 10,000 business leaders. 3 US patents, MBA from Berkeley Haas, MS from IIT Roorkee.
+For seven years I was Head Instructor for the AI/ML executive program at UC Berkeley Executive Education, teaching more than 10,000 business leaders. 3 US patents, MBA from Berkeley Haas, MS from IIT Roorkee. San Jose, CA.
 
-San Jose, CA · [LinkedIn](https://www.linkedin.com/in/royvinay)
+</details>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg">
