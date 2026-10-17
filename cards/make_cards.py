@@ -152,7 +152,8 @@ def about(t):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Career: NVIDIA 2008, Qualcomm 2012, Apple 2015 (Sidecar), Zeus Living 2019, Vista 2020, founding product lead at an AI SaaS startup 2024, now VP of Product at Burq.ai. Seven years as Head Instructor for the AI/ML executive program at UC Berkeley Executive Education, 10,000+ leaders. 3 US patents. MBA, Berkeley Haas. MS, IIT Roorkee.">
 <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t["bg"]}" stroke="{t["border"]}"/>
 <text x="60" y="64" font-family="{SANS}" font-size="17" font-weight="700" fill="{t["accent"]}">About</text>
-<text x="60" y="106" font-family="{SERIF}" font-size="32" font-weight="700" fill="{t["ink"]}">VP of Product at Burq.ai, leading Product, Design and AI.</text>
+<text x="60" y="106" font-family="{SERIF}" font-size="32" font-weight="700" fill="{t["ink"]}">VP of Product at Burq.ai, leading Product and AI.</text>
+<text x="1140" y="106" text-anchor="end" font-family="{SANS}" font-size="20" font-weight="700" fill="{t["accent"]}" text-decoration="underline">LinkedIn ↗</text>
 <line x1="{x0 + 8}" y1="186" x2="{x0 + 8 + step * (len(TIMELINE) - 1):.0f}" y2="186" stroke="{t["border"]}" stroke-width="2"/>
 {"".join(stops)}
 <line x1="60" y1="282" x2="1140" y2="282" stroke="{t["border"]}"/>
