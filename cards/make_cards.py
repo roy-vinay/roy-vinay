@@ -61,18 +61,20 @@ def ring(cx, cy, r, width, fraction, color, track):
 
 
 def card(slug, kicker, title, lines, evidence, t):
-    # The section heading above each pair already names the group, so the card leads with its title.
+    # Ink cards: dark in both themes, like the Writing tiles, with the title's initial set large and faint.
     w, h = 480, 224
+    dark = t["bg"] != "#FFFFFF"
+    tile, border, ghost = ("#1C2533", "#30363D", "#2A3446") if dark else ("#18202C", "#18202C", "#222C3B")
     body = "".join(
-        f'<text x="28" y="{100 + i * 25}" font-family="{SANS}" font-size="17" fill="{t["body"]}">{escape(l)}</text>'
+        f'<text x="28" y="{100 + i * 25}" font-family="{SANS}" font-size="17" fill="#C9D1D9">{escape(l)}</text>'
         for i, l in enumerate(lines))
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}: {escape(" ".join(lines))}">
-<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{t["bg"]}" stroke="{t["border"]}"/>
-{ring(w - 40, 44, 12, 3.5, 0.82, t["accent"], t["track"])}
-<text x="28" y="56" font-family="{SERIF}" font-size="29" font-weight="700" fill="{t["ink"]}">{escape(title)}</text>
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}: {escape(" ".join(lines))} {escape(evidence)}">
+<defs><clipPath id="c-{slug}"><rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14"/></clipPath></defs>
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{tile}" stroke="{border}"/>
+<g clip-path="url(#c-{slug})"><text x="{w + 6}" y="{h + 44}" text-anchor="end" font-family="{SERIF}" font-size="230" font-weight="700" fill="{ghost}">{escape(title[0])}</text></g>
+<text x="28" y="56" font-family="{SERIF}" font-size="29" font-weight="700" fill="#F0F3F6">{escape(title)}</text>
 {body}
-<line x1="28" y1="178" x2="{w - 28}" y2="178" stroke="{t["border"]}"/>
-<text x="28" y="204" font-family="{SANS}" font-size="15" font-weight="600" fill="{t["accent"]}">{escape(evidence)}</text>
+<text x="28" y="200" font-family="{SANS}" font-size="15" font-weight="700" fill="#FF8A3D">{escape(evidence)}</text>
 </svg>
 '''
 
@@ -169,7 +171,7 @@ for name, t in THEMES.items():
         (OUT / f"{slug}-{name}.svg").write_text(article(pub, lines, t, f"{slug}-{name}"))
     (OUT / f"banner-{name}.svg").write_text(banner(t))
     for slug, *rest in CARDS:
-        (OUT / f"{slug}-{name}.svg").write_text(card(slug, *rest, t))
+        (OUT / f"{slug}-{name}.svg").write_text(card(f"{slug}-{name}", *rest, t))
 print("Wrote", len(list(OUT.glob("*.svg"))), "SVGs")
 
 
