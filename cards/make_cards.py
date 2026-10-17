@@ -99,16 +99,20 @@ ARTICLES = [
 ]
 
 
-def article(pub, lines, t):
-    w, h = 400, 210
+def article(pub, lines, t, slug):
+    # Dark tiles in both themes, with the outlet's initial set large and faint behind the title.
+    w, h = 400, 230
+    dark = t["bg"] != "#FFFFFF"
+    tile, border, ghost = ("#1C2533", "#30363D", "#2A3446") if dark else ("#18202C", "#18202C", "#243042")
     title = "".join(
-        f'<text x="26" y="{84 + i * 30}" font-family="{SERIF}" font-size="22" font-weight="700" fill="{t["ink"]}">{escape(l)}</text>'
+        f'<text x="28" y="{62 + i * 30}" font-family="{SERIF}" font-size="23" font-weight="700" fill="#F0F3F6">{escape(l)}</text>'
         for i, l in enumerate(lines))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(" ".join(lines))}, on {pub}">
-<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{t["bg"]}" stroke="{t["border"]}"/>
-<text x="26" y="44" font-family="{SANS}" font-size="15" font-weight="700" fill="{t["accent"]}">{pub}</text>
+<defs><clipPath id="c-{slug}"><rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="16"/></clipPath></defs>
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="16" fill="{tile}" stroke="{border}"/>
+<g clip-path="url(#c-{slug})"><text x="{w + 8}" y="{h + 34}" text-anchor="end" font-family="{SERIF}" font-size="190" font-weight="700" fill="{ghost}">{pub[0]}</text></g>
 {title}
-<text x="26" y="186" font-family="{SANS}" font-size="15" fill="{t["muted"]}">Read the article</text>
+<text x="28" y="{h - 26}" font-family="{SANS}" font-size="15" font-weight="700" fill="#FF8A3D">{pub}</text>
 </svg>
 '''
 
@@ -151,7 +155,7 @@ def about(t):
 for name, t in THEMES.items():
     (OUT / f"about-{name}.svg").write_text(about(t))
     for slug, pub, lines in ARTICLES:
-        (OUT / f"{slug}-{name}.svg").write_text(article(pub, lines, t))
+        (OUT / f"{slug}-{name}.svg").write_text(article(pub, lines, t, f"{slug}-{name}"))
     (OUT / f"banner-{name}.svg").write_text(banner(t))
     for slug, *rest in CARDS:
         (OUT / f"{slug}-{name}.svg").write_text(card(slug, *rest, t))
