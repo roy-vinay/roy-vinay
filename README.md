@@ -16,18 +16,18 @@ https://github.com/user-attachments/assets/59dd167e-04f4-46d6-83a1-887d91a94747
 
 **Build and evaluate**
 
-<a href="https://github.com/roy-vinay/applied-ai-agents"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/applied-ai-agents-dark.svg"><img src="cards/applied-ai-agents-light.svg" width="49%" alt="Applied AI Agents: agents with guardrails and evals, plus Failure Files"></picture></a>
-<a href="https://github.com/roy-vinay/enterprise-ai-platform"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/enterprise-ai-platform-dark.svg"><img src="cards/enterprise-ai-platform-light.svg" width="49%" alt="Enterprise AI Platform: evals for BI chat bots"></picture></a>
+<a href="https://github.com/roy-vinay/applied-ai-agents"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/applied-ai-agents-dark.svg?v=ink"><img src="cards/applied-ai-agents-light.svg?v=ink" width="49%" alt="Applied AI Agents: agents with guardrails and evals, plus Failure Files"></picture></a>
+<a href="https://github.com/roy-vinay/enterprise-ai-platform"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/enterprise-ai-platform-dark.svg?v=ink"><img src="cards/enterprise-ai-platform-light.svg?v=ink" width="49%" alt="Enterprise AI Platform: evals for BI chat bots"></picture></a>
 
 **Decisions and practices**
 
-<a href="https://github.com/roy-vinay/ai-decision-log"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/ai-decision-log-dark.svg"><img src="cards/ai-decision-log-light.svg" width="49%" alt="AI Decision Log: one-page memos on applied AI product choices"></picture></a>
-<a href="https://github.com/roy-vinay/claude-code-team-playbook"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/claude-code-team-playbook-dark.svg"><img src="cards/claude-code-team-playbook-light.svg" width="49%" alt="Claude Code Team Playbook: run several coding agents like a small team"></picture></a>
+<a href="https://github.com/roy-vinay/ai-decision-log"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/ai-decision-log-dark.svg?v=ink"><img src="cards/ai-decision-log-light.svg?v=ink" width="49%" alt="AI Decision Log: one-page memos on applied AI product choices"></picture></a>
+<a href="https://github.com/roy-vinay/claude-code-team-playbook"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/claude-code-team-playbook-dark.svg?v=ink"><img src="cards/claude-code-team-playbook-light.svg?v=ink" width="49%" alt="Claude Code Team Playbook: run several coding agents like a small team"></picture></a>
 
 **Try the tools**
 
-<a href="https://github.com/roy-vinay/mdeditdiff"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/mdeditdiff-dark.svg"><img src="cards/mdeditdiff-light.svg" width="49%" alt="mdEditDiff: a Markdown editor for people and a change diff for agents"></picture></a>
-<a href="https://github.com/roy-vinay/applied-ai-agents/tree/main/tools/tech60"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/tech60-dark.svg"><img src="cards/tech60-light.svg" width="49%" alt="Tech60: a tech news front page for the Mac desktop"></picture></a>
+<a href="https://github.com/roy-vinay/mdeditdiff"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/mdeditdiff-dark.svg?v=ink"><img src="cards/mdeditdiff-light.svg?v=ink" width="49%" alt="mdEditDiff: a Markdown editor for people and a change diff for agents"></picture></a>
+<a href="https://github.com/roy-vinay/applied-ai-agents/tree/main/tools/tech60"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/tech60-dark.svg?v=ink"><img src="cards/tech60-light.svg?v=ink" width="49%" alt="Tech60: a tech news front page for the Mac desktop"></picture></a>
 
 #### Writing
 
