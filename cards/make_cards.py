@@ -80,19 +80,32 @@ def card(slug, kicker, title, lines, evidence, t):
 
 
 def banner(t):
-    # An article header: section label, a two-line serif headline, and a byline.
+    # A newspaper masthead: dateline strip, the name as nameplate, double rule, four short columns.
     w, h = 1200, 280
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Moving AI from demos into production, one measured failure at a time. By Vinay Roy, VP of Product at Burq.ai.">
+    cols = [("Today", ["VP of Product at Burq.ai,", "leading Product and AI"]),
+            ("On GitHub", ["AI systems and agents, built", "and measured in public"]),
+            ("Writing", ["Field notes on shipping AI,", "on Substack and Medium"]),
+            ("Teaching", ["AI strategy for 10,000+", "leaders at Berkeley Exec Ed"])]
+    parts = []
+    for i, (label, lines) in enumerate(cols):
+        x = 56 + i * 274
+        if i:
+            parts.append(f'<line x1="{x - 16}" y1="192" x2="{x - 16}" y2="256" stroke="{t["border"]}"/>')
+        parts.append(f'<text x="{x}" y="204" font-family="{SANS}" font-size="13" font-weight="700" fill="{t["accent"]}">{label}</text>')
+        for j, l in enumerate(lines):
+            parts.append(f'<text x="{x}" y="{228 + j * 23}" font-family="{SERIF}" font-size="18" font-weight="700" fill="{t["ink"]}">{escape(l)}</text>')
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Vinay Roy. AI systems and agents. VP of Product at Burq.ai, leading Product and AI. On GitHub: AI systems and agents, built and measured in public. Writing on Substack and Medium. Teaching AI strategy to 10,000+ leaders at Berkeley Exec Ed.">
 <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="18" fill="{t["bg"]}" stroke="{t["border"]}"/>
-<text x="60" y="64" font-family="{SANS}" font-size="17" font-weight="700" fill="{t["accent"]}">Applied AI</text>
-<text x="60" y="124" font-family="{SERIF}" font-size="50" font-weight="700" letter-spacing="-0.8" fill="{t["ink"]}">Moving AI from demos into production,</text>
-<text x="60" y="182" font-family="{SERIF}" font-size="50" font-weight="700" letter-spacing="-0.8" fill="{t["ink"]}">one measured failure at a time</text>
-<circle cx="80" cy="231" r="20" fill="{t["ink"]}"/>
-<text x="80" y="237" text-anchor="middle" font-family="{SERIF}" font-size="16" font-weight="700" fill="{t["bg"]}">VR</text>
-<text x="112" y="238" font-family="{SANS}" font-size="20" fill="{t["muted"]}">By <tspan font-weight="700" fill="{t["ink"]}">Vinay Roy</tspan>, VP of Product at Burq.ai</text>
+<text x="56" y="46" font-family="{SANS}" font-size="15" fill="{t["muted"]}">San Jose, California</text>
+<text x="600" y="46" text-anchor="middle" font-family="{SANS}" font-size="15" font-weight="600" fill="{t["ink"]}">AI systems and agents</text>
+<text x="1144" y="46" text-anchor="end" font-family="{SANS}" font-size="15" fill="{t["muted"]}">Building since 2008</text>
+<line x1="56" y1="60" x2="1144" y2="60" stroke="{t["ink"]}"/>
+<text x="600" y="144" text-anchor="middle" font-family="{SERIF}" font-size="76" font-weight="700" letter-spacing="-1.5" fill="{t["ink"]}">Vinay Roy</text>
+<line x1="56" y1="166" x2="1144" y2="166" stroke="{t["ink"]}"/>
+<line x1="56" y1="170" x2="1144" y2="170" stroke="{t["ink"]}"/>
+{"".join(parts)}
 </svg>
 '''
-
 
 S = "https://vinayroy.substack.com/p/"
 ARTICLES = [  # newest first; (slug, outlet, title lines, url)
