@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="224" viewBox="0 0 480 224" role="img" aria-label="mdEditDiff: A Markdown editor for people and a change diff for agents: agents see only what changed since they last looked.">
-<rect x="0.5" y="0.5" width="479" height="223" rx="14" fill="#FFFFFF" stroke="#D0D7DE"/>
-<circle cx="440" cy="44" r="12" fill="none" stroke="#EAEEF2" stroke-width="3.5"/><circle cx="440" cy="44" r="12" fill="none" stroke="#C2410C" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="61.8 75.4" transform="rotate(-90 440 44)"/>
-<text x="28" y="56" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700" fill="#1F2328">mdEditDiff</text>
-<text x="28" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#424A53">A Markdown editor for people and a change diff</text><text x="28" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#424A53">for agents: agents see only what changed since</text><text x="28" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#424A53">they last looked.</text>
-<line x1="28" y1="178" x2="452" y2="178" stroke="#D0D7DE"/>
-<text x="28" y="204" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#C2410C">Mac app, CLI, and MCP server. Free, MIT.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="224" viewBox="0 0 480 224" role="img" aria-label="mdEditDiff: A Markdown editor for people and a change diff for agents: agents see only what changed since they last looked. Mac app, CLI, and MCP server. Free, MIT.">
+<defs><clipPath id="c-mdeditdiff-light"><rect x="0.5" y="0.5" width="479" height="223" rx="14"/></clipPath></defs>
+<rect x="0.5" y="0.5" width="479" height="223" rx="14" fill="#18202C" stroke="#18202C"/>
+<g clip-path="url(#c-mdeditdiff-light)"><text x="486" y="268" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="230" font-weight="700" fill="#222C3B">m</text></g>
+<text x="28" y="56" font-family="Georgia, 'Times New Roman', serif" font-size="29" font-weight="700" fill="#F0F3F6">mdEditDiff</text>
+<text x="28" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#C9D1D9">A Markdown editor for people and a change diff</text><text x="28" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#C9D1D9">for agents: agents see only what changed since</text><text x="28" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#C9D1D9">they last looked.</text>
+<text x="28" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FF8A3D">Mac app, CLI, and MCP server. Free, MIT.</text>
 </svg>
