@@ -53,6 +53,60 @@ PAGES = {
             ("For agents", ["CLI and MCP server that", "return only what changed"]),
             ("For people", ["A native Mac app with", "changes highlighted"]),
             ("License", ["Free and open source,", "MIT"])]),
+    "mcp-chat": ("applied-ai-agents", "mcp-chat-masthead", "MCP Chat", "applied-ai-agents / agents / mcp-chat",
+        "Build and evaluate", [
+            ("What it is", ["A terminal chat app on the", "Model Context Protocol"]),
+            ("How it works", ["An MCP client and server", "talking over stdio"]),
+            ("Features", ["@document mentions", "and /commands"]),
+            ("Needs", ["Python 3.9 or later and", "an Anthropic API key"])]),
+    "guarded-support-agent": ("applied-ai-agents", "guarded-agent-masthead", "Guarded Support Agent",
+        "applied-ai-agents / production-patterns", "Build and evaluate", [
+            ("What it is", ["A support agent built", "to survive production"]),
+            ("Guards", ["Authorization in code,", "budgets, idempotent writes"]),
+            ("Evidence", ["Duplicate payments:", "79/100 off, 0/100 on"]),
+            ("Run it", ["Locally, no API key,", "12 evals in CI"])]),
+    "ff-01": ("applied-ai-agents", "ff-01-masthead", "FF-01: Made-up Policy", "applied-ai-agents / failure-files",
+        "Explore failure experiments", [
+            ("The question", ["Can you stop a chatbot", "from making up policy?"]),
+            ("The incident", ["An airline chatbot case,", "Canada, 2024"]),
+            ("Best guard", ["A small yes/no model:", "80% caught, 6% blocked"]),
+            ("Cost", ["About 2 cents across", "600 answers"])]),
+    "ff-05": ("applied-ai-agents", "ff-05-masthead", "FF-05: Rules in the Prompt", "applied-ai-agents / failure-files",
+        "Explore failure experiments", [
+            ("The question", ["What do rules in the", "prompt actually buy?"]),
+            ("The incident", ["A coding agent deleted a", "production database, 2025"]),
+            ("With rules", ["Neither model broke", "a single rule"]),
+            ("Without them", ["The larger model gave out", "emails on every try"])]),
+    "mdeditdiff-moved": ("applied-ai-agents", "mdeditdiff-moved-masthead", "mdEditDiff Has Moved",
+        "applied-ai-agents / tools / mdeditdiff", "Try the tools", [
+            ("New home", ["github.com/roy-vinay/", "mdeditdiff"]),
+            ("There", ["Mac app, CLI, MCP server,", "docs and website"]),
+            ("Old releases", ["Up to 0.5.3 stay on this", "repo's Releases page"]),
+            ("History", ["Before the move, in this", "repo's git log"])]),
+    "text-to-sql": ("enterprise-ai-platform", "text-to-sql-masthead", "Text-to-SQL Evals",
+        "enterprise-ai-platform / evals / text-to-sql", "Build and evaluate", [
+            ("The question", ["When should a BI bot", "stay quiet?"]),
+            ("Trap set", ["Refusing and clarifying", "scored as right answers"]),
+            ("No answer key", ["Metamorphic tests check", "answers against each other"]),
+            ("Mutation testing", ["Break the semantic model,", "see if the evals notice"])]),
+    "d-001": ("ai-decision-log", "d-001-masthead", "D-001: Ticket Routing", "ai-decision-log / decisions",
+        "Decisions and practices", [
+            ("The question", ["Rules, LLM, or hybrid for", "support ticket routing?"]),
+            ("Status", ["Decided"]),
+            ("Area", ["Agent architecture,", "cost"]),
+            ("Model", ["A cost model you can", "rerun, in models/"])]),
+    "d-002": ("ai-decision-log", "d-002-masthead", "D-002: How Many Evals", "ai-decision-log / decisions",
+        "Decisions and practices", [
+            ("The question", ["How many evals", "are enough?"]),
+            ("Status", ["Decided"]),
+            ("Area", ["Evaluation"]),
+            ("Model", ["A sample-size model you", "can rerun, in models/"])]),
+    "d-003": ("ai-decision-log", "d-003-masthead", "D-003: When to Stay Quiet", "ai-decision-log / decisions",
+        "Decisions and practices", [
+            ("The question", ["When should a BI bot", "answer, or stay quiet?"]),
+            ("Status", ["Decided, no launch yet"]),
+            ("Area", ["Evaluation, trust,", "cost"]),
+            ("Model", ["An abstention model you", "can rerun, in models/"])]),
 }
 
 # Dark cards and tiles, same design as the profile. (repo, asset name, kind, args)
@@ -79,6 +133,12 @@ EXTRA = [
     ("ai-decision-log", "tile-d-001", "tile", ("D-001", ["Rules, LLM, or hybrid", "for support ticket", "routing?"])),
     ("ai-decision-log", "tile-d-002", "tile", ("D-002", ["How many evals", "are enough?"])),
     ("ai-decision-log", "tile-d-003", "tile", ("D-003", ["When should a BI bot", "answer, and when should", "it stay quiet?"])),
+    ("applied-ai-agents", "card-download-tech60", "card", ("Mac app downloads", "Tech60",
+        ["A tech news front page for the Mac desktop.", "Early build for macOS 14 and later. Summaries", "need Apple Intelligence on macOS 26."],
+        "Download for Mac")),
+    ("applied-ai-agents", "card-download-mdeditdiff", "card", ("Mac app downloads", "mdEditDiff",
+        ["An editor for people and a diff for agents.", "Early release for macOS 14 and later.", "Free and open source, MIT."],
+        "Download for Mac")),
     ("claude-code-team-playbook", "tile-article", "tile", ("Substack", ["More Claude Code Sessions", "Made Me Ship Less. Here's", "What Fixed It."])),
 ]
 ABOUT_REPOS = ["applied-ai-agents", "enterprise-ai-platform", "ai-decision-log", "claude-code-team-playbook", "mdeditdiff"]
