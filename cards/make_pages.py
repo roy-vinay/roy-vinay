@@ -49,10 +49,10 @@ PAGES = {
             ("Claim Before Code", ["Overlapping edits go to", "the owner, not a conflict"]),
             ("Inside", ["Starter files, specs,", "and a rework log"])]),
     "mdeditdiff": ("mdeditdiff", "masthead", "mdEditDiff", "roy-vinay / mdeditdiff", "Try the tools", [
-            ("What it is", ["An editor for people,", "a diff for agents"]),
+            ("What it is", ["What changed since each", "person or agent last read"]),
             ("For agents", ["CLI and MCP server that", "return only what changed"]),
             ("For people", ["A native Mac app with", "changes highlighted"]),
-            ("License", ["Free and open source,", "MIT"])]),
+            ("Across", ["Sessions, coding tools,", "and uncommitted edits"])]),
     "mcp-chat": ("applied-ai-agents", "mcp-chat-masthead", "MCP Chat", "applied-ai-agents / agents / mcp-chat",
         "Build and evaluate", [
             ("What it is", ["A terminal chat app on the", "Model Context Protocol"]),
@@ -137,7 +137,7 @@ EXTRA = [
         ["A tech news front page for the Mac desktop.", "Early build for macOS 14 and later. Summaries", "need Apple Intelligence on macOS 26."],
         "Download for Mac")),
     ("applied-ai-agents", "card-download-mdeditdiff", "card", ("Mac app downloads", "mdEditDiff",
-        ["An editor for people and a diff for agents.", "Early release for macOS 14 and later.", "Free and open source, MIT."],
+        ["What changed since each reader last looked.", "Early release for macOS 14 and later.", "Free and open source, MIT."],
         "Download for Mac")),
     ("claude-code-team-playbook", "tile-article", "tile", ("Substack", ["More Claude Code Sessions", "Made Me Ship Less. Here's", "What Fixed It."])),
 ]

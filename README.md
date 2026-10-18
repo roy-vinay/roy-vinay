@@ -26,7 +26,7 @@ https://github.com/user-attachments/assets/59dd167e-04f4-46d6-83a1-887d91a94747
 
 **Try the tools**
 
-<a href="https://github.com/roy-vinay/mdeditdiff"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/mdeditdiff-dark.svg?v=ink"><img src="cards/mdeditdiff-light.svg?v=ink" width="49%" alt="mdEditDiff: a Markdown editor for people and a change diff for agents"></picture></a>
+<a href="https://github.com/roy-vinay/mdeditdiff"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/mdeditdiff-dark.svg?v=reader"><img src="cards/mdeditdiff-light.svg?v=reader" width="49%" alt="mdEditDiff: shows what changed in a Markdown file since each person or AI agent last read it, across sessions and coding tools. Mac app, CLI, and MCP server. Free, MIT."></picture></a>
 <a href="https://github.com/roy-vinay/applied-ai-agents/tree/main/tools/tech60"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/tech60-dark.svg?v=experimental"><img src="cards/tech60-light.svg?v=experimental" width="49%" alt="Tech60: a tech news front page for the Mac desktop"></picture></a>
 
 #### Writing
