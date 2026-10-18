@@ -3,6 +3,8 @@
   <img src="cards/masthead-light.svg" width="100%" alt="Vinay Roy. AI systems and agents. VP of Product at Burq.ai, leading Product and AI. Building since 2008.">
 </picture>
 
+<br>
+
 I'm an AI and product leader. I build, evaluate, and ship AI decision systems across B2B SaaS and marketplaces, and study what transfers between them.
 
 My projects explore what it takes to move AI from demos into production: evaluation, tool use, guardrails, human oversight, and decision quality. Each one starts the same way: a real problem, the smallest version that works, evals on the behavior that matters, and a write-up of the trade-offs.
