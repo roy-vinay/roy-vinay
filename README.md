@@ -3,7 +3,7 @@
   <img src="cards/masthead-light.svg" width="100%" alt="Vinay Roy. AI systems and agents. VP of Product at Burq.ai, leading Product and AI. Building since 2008.">
 </picture>
 
-<br>
+<p>&nbsp;</p>
 
 I'm an AI and product leader. I build, evaluate, and ship AI decision systems across B2B SaaS and marketplaces, and study what transfers between them.
 
