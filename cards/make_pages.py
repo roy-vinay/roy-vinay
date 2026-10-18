@@ -6,6 +6,7 @@ Run from a folder that holds the repo clones: python3 roy-vinay/roy-vinay/cards/
 import sys
 from pathlib import Path
 
+from make_cards import CARDS, about, article, card
 from masthead import THEMES, masthead
 
 BY = "By Vinay Roy"
@@ -54,6 +55,34 @@ PAGES = {
             ("License", ["Free and open source,", "MIT"])]),
 }
 
+# Dark cards and tiles, same design as the profile. (repo, asset name, kind, args)
+PROFILE_CARDS = {c[0]: c[1:] for c in CARDS}
+EXTRA = [
+    ("applied-ai-agents", "card-guarded-support-agent", "card", ("Build and evaluate", "Guarded Support Agent",
+        ["Authorization in code, retries, budgets,", "idempotent writes, PII redaction and", "injection screening, tested in CI."],
+        "Duplicate payments: 79/100 unguarded, 0/100 guarded.")),
+    ("applied-ai-agents", "card-mcp-chat", "card", ("Build and evaluate", "MCP Chat",
+        ["A terminal chat app that shows the Model", "Context Protocol end to end: a client and", "a server talking over stdio."],
+        "Python and MCP, with @mentions and /commands.")),
+    ("applied-ai-agents", "card-ff-01", "card", ("Failure Files", "FF-01: Made-up Policy",
+        ["Can you stop a support chatbot from", "inventing policy? The Air Canada case,", "tested in four phases."],
+        "80% of failures caught, 6% wrongly blocked.")),
+    ("applied-ai-agents", "card-ff-05", "card", ("Failure Files", "FF-05: Rules in the Prompt",
+        ["What does telling an agent the rules buy", "you? The Replit database deletion,", "tested on a data bot."],
+        "No rules: the larger model leaked emails.")),
+    ("applied-ai-agents", "card-tech60", "card", PROFILE_CARDS["tech60"]),
+    ("applied-ai-agents", "card-mdeditdiff", "card", PROFILE_CARDS["mdeditdiff"]),
+    ("applied-ai-agents", "card-ai-decision-log", "card", PROFILE_CARDS["ai-decision-log"]),
+    ("enterprise-ai-platform", "card-text-to-sql", "card", ("Modules", "Text-to-SQL Evals",
+        ["Evals for BI chat bots that measure when", "they should stay quiet: trap questions,", "metamorphic and mutation testing."],
+        "Fails right answers produced the wrong way.")),
+    ("ai-decision-log", "tile-d-001", "tile", ("D-001", ["Rules, LLM, or hybrid", "for support ticket", "routing?"])),
+    ("ai-decision-log", "tile-d-002", "tile", ("D-002", ["How many evals", "are enough?"])),
+    ("ai-decision-log", "tile-d-003", "tile", ("D-003", ["When should a BI bot", "answer, and when should", "it stay quiet?"])),
+    ("claude-code-team-playbook", "tile-article", "tile", ("Substack", ["More Claude Code Sessions", "Made Me Ship Less. Here's", "What Fixed It."])),
+]
+ABOUT_REPOS = ["applied-ai-agents", "enterprise-ai-platform", "ai-decision-log", "claude-code-team-playbook", "mdeditdiff"]
+
 LOCAL = {"applied-ai-agents": "aaa"}  # clone folder names that differ from the repo name
 
 
@@ -65,6 +94,15 @@ def main(root):
         for theme, t in THEMES.items():
             (out / f"{name}-{theme}.svg").write_text(masthead(t, title, left, center, BY, cols, label))
         print(out / name)
+    for repo, name, kind, args in EXTRA:
+        out = Path(root) / LOCAL.get(repo, repo) / ".github" / "assets"
+        for theme, t in THEMES.items():
+            svg = card(f"{name}-{theme}", *args, t) if kind == "card" else article(args[0], args[1], t, f"{name}-{theme}")
+            (out / f"{name}-{theme}.svg").write_text(svg)
+    for repo in ABOUT_REPOS:
+        out = Path(root) / LOCAL.get(repo, repo) / ".github" / "assets"
+        for theme, t in THEMES.items():
+            (out / f"about-{theme}.svg").write_text(about(t))
 
 
 if __name__ == "__main__":

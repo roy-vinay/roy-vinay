@@ -162,14 +162,6 @@ def about(t):
 '''
 
 
-for name, t in THEMES.items():
-    (OUT / f"about-{name}.svg").write_text(about(t))
-    for slug, pub, lines, _url in ARTICLES:
-        (OUT / f"{slug}-{name}.svg").write_text(article(pub, lines, t, f"{slug}-{name}"))
-    (OUT / f"masthead-{name}.svg").write_text(banner(t))
-    for slug, *rest in CARDS:
-        (OUT / f"{slug}-{name}.svg").write_text(card(f"{slug}-{name}", *rest, t))
-print("Wrote", len(list(OUT.glob("*.svg"))), "SVGs")
 
 
 def writing_row():
@@ -187,5 +179,17 @@ def writing_row():
         out += f"\n\n<details><summary>{len(rest)} more articles</summary>\n\n" + rows(rest) + "\n\n</details>"
     return out
 
+def write_all():
+    for name, t in THEMES.items():
+        (OUT / f"about-{name}.svg").write_text(about(t))
+        for slug, pub, lines, _url in ARTICLES:
+            (OUT / f"{slug}-{name}.svg").write_text(article(pub, lines, t, f"{slug}-{name}"))
+        (OUT / f"masthead-{name}.svg").write_text(banner(t))
+        for slug, *rest in CARDS:
+            (OUT / f"{slug}-{name}.svg").write_text(card(f"{slug}-{name}", *rest, t))
+    print("Wrote", len(list(OUT.glob("*.svg"))), "SVGs")
+
+
 if __name__ == "__main__":
+    write_all()
     (OUT / "writing-row.html").write_text(writing_row() + "\n")
