@@ -77,3 +77,7 @@ For seven years I was Head Instructor for the AI/ML executive program at UC Berk
   <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg">
   <img alt="ASCII portrait of Vinay Roy. VP of Product at Burq.ai; builds AI, agents, evals and decision systems." src="light_mode.svg" width="985">
 </picture>
+
+---
+
+*Independent project; not affiliated with or endorsed by my employer. No proprietary code, data, or confidential information.*
