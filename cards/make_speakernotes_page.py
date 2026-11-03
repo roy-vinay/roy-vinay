@@ -319,7 +319,6 @@ def main(root):
     out = root / ".github" / "assets"
     out.mkdir(parents=True, exist_ok=True)
     ink_svgs = {
-        "speakernotes-hero": hero(img),
         "speakernotes-feature-slides": feature(img, "Presenting", ["One slide at a time"],
             ["Write notes in Markdown with a line of ---", "between slides. Headings work too, so a Word",
              "or PDF script converts in a minute."], "⌃⌥→ and ⌃⌥← from any app.", ["app-present.png"]),
