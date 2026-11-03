@@ -50,6 +50,11 @@ CARDS = [
       "only stories with real signal, each with a",
       "short on-device summary."],
      "Summaries must pass checks against the source."),
+    ("speakernotes", "Try the tools", "SpeakerNotes",
+     ["Speaker notes that float over your slides",
+      "on Zoom and Meet, one slide at a time, with",
+      "on-device emphasis."],
+     "Hidden from your screen share."),
 ]
 
 
