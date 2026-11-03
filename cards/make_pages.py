@@ -17,7 +17,7 @@ PAGES = {
             ("What it is", ["Agents with guardrails,", "evals and trade-offs"]),
             ("Start here", ["A guarded support agent,", "no API key needed"]),
             ("Failure Files", ["Public AI incidents,", "reproduced and measured"]),
-            ("Tools", ["Tech60 and mdEditDiff,", "two Mac apps"])]),
+            ("Tools", ["Tech60, mdEditDiff and", "SpeakerNotes: Mac apps"])]),
     "failure-files": ("applied-ai-agents", "failure-files-masthead", "Failure Files", "applied-ai-agents / failure-files",
         "Explore failure experiments", [
             ("The idea", ["Public AI failures,", "turned into experiments"]),
@@ -30,6 +30,18 @@ PAGES = {
             ("Signal", ["Only stories getting real", "attention, ranked"]),
             ("Summaries", ["Checked against the source,", "made on your Mac"]),
             ("Get it", ["Free for macOS 14", "and later, MIT"])]),
+    "speakernotes": ("applied-ai-agents", "speakernotes-masthead", "SpeakerNotes", "applied-ai-agents / tools / speakernotes",
+        "Try the tools", [
+            ("What it is", ["Speaker notes that float", "over your slides"]),
+            ("Private", ["Hidden from your", "screen share"]),
+            ("Emphasis", ["Highlights found by", "on-device AI"]),
+            ("Get it", ["Free for macOS 13", "and later, MIT"])]),
+    "speakernotes-moved": ("speakernotes", "moved-masthead", "SpeakerNotes Has Moved",
+        "roy-vinay / speakernotes", "Try the tools", [
+            ("New home", ["applied-ai-agents /", "tools / speakernotes"]),
+            ("There", ["Mac app, installer,", "docs and releases"]),
+            ("Old releases", ["0.1.0 and 0.2.0 stay on this", "repo's Releases page"]),
+            ("Update", ["Run the install command", "from the new home"])]),
     "enterprise-ai-platform": ("enterprise-ai-platform", "masthead", "Enterprise AI Platform",
         "roy-vinay / enterprise-ai-platform", "Build and evaluate", [
             ("What it is", ["AI decision systems", "for B2B SaaS"]),
@@ -126,6 +138,7 @@ EXTRA = [
         "No rules: the larger model leaked emails.")),
     ("applied-ai-agents", "card-tech60", "card", PROFILE_CARDS["tech60"]),
     ("applied-ai-agents", "card-mdeditdiff", "card", PROFILE_CARDS["mdeditdiff"]),
+    ("applied-ai-agents", "card-speakernotes", "card", PROFILE_CARDS["speakernotes"]),
     ("applied-ai-agents", "card-ai-decision-log", "card", PROFILE_CARDS["ai-decision-log"]),
     ("enterprise-ai-platform", "card-text-to-sql", "card", ("Modules", "Text-to-SQL Evals",
         ["Evals for BI chat bots that measure when", "they should stay quiet: trap questions,", "metamorphic and mutation testing."],
@@ -138,6 +151,9 @@ EXTRA = [
         "Download for Mac")),
     ("applied-ai-agents", "card-download-mdeditdiff", "card", ("Mac app downloads", "mdEditDiff",
         ["What changed since each reader last looked.", "Early release for macOS 14 and later.", "Free and open source, MIT."],
+        "Download for Mac")),
+    ("applied-ai-agents", "card-download-speakernotes", "card", ("Mac app downloads", "SpeakerNotes",
+        ["Speaker notes that float over your slides.", "Early build for macOS 13 and later. Instructions", "need Apple Intelligence on macOS 26."],
         "Download for Mac")),
     ("claude-code-team-playbook", "tile-article", "tile", ("Substack", ["More Claude Code Sessions", "Made Me Ship Less. Here's", "What Fixed It."])),
 ]
