@@ -33,8 +33,8 @@ PAGES = {
     "speakernotes": ("applied-ai-agents", "speakernotes-masthead", "SpeakerNotes", "applied-ai-agents / tools / speakernotes",
         "Try the tools", [
             ("What it is", ["Speaker notes that float", "over your slides"]),
-            ("Private", ["Hidden from your", "screen share"]),
-            ("Emphasis", ["Highlights found by", "on-device AI"]),
+            ("Private", ["Hidden even when you", "share your whole screen"]),
+            ("Follows", ["Move your slides, and", "the notes move with you"]),
             ("Get it", ["Free for macOS 13", "and later, MIT"])]),
     "speakernotes-moved": ("speakernotes", "moved-masthead", "SpeakerNotes Has Moved",
         "roy-vinay / speakernotes", "Try the tools", [

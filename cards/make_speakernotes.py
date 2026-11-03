@@ -116,12 +116,12 @@ SECTIONS = [
 ]
 
 GLANCE = [
-    ("glance-private", "At a glance", "Private",
-     ["Asks macOS to leave the notes out of every", "screen capture. You see them; your", "audience sees your slides."],
+    ("glance-private", "At a glance", "Hidden, even full screen",
+     ["Share your entire screen or desktop, and", "your audience still sees only your slides.", "You see your notes; they never do."],
      "Checked in CI on every change."),
     ("glance-slides", "At a glance", "Follows your slides",
-     ["Moves with Keynote and PowerPoint exactly,", "and with Google Slides or anything else by", "reading the slide's title on your Mac."],
-     "Or move by hand with ⌃⌥→ from any app."),
+     ["Move your slides, and the notes move with", "you: Keynote, PowerPoint, Google Slides or", "anything else. It works the other way too."],
+     "No extra clicks while you present."),
     ("glance-readable", "At a glance", "Easy to read",
      ["Size, typeface and spacing. Highlight what", "matters, by hand or by describing it to", "Apple's on-device model."],
      "Your notes never leave your Mac."),

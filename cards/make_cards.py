@@ -52,9 +52,9 @@ CARDS = [
      "Summaries must pass checks against the source."),
     ("speakernotes", "Try the tools", "SpeakerNotes",
      ["Speaker notes that float over your slides",
-      "on Zoom and Meet, one slide at a time, with",
-      "on-device emphasis."],
-     "Hidden from your screen share."),
+      "on Zoom and Meet, and move when your",
+      "slides move."],
+     "Hidden even when you share your whole screen."),
 ]
 
 
