@@ -107,9 +107,7 @@ SECTIONS = [
     ("problem", "The problem", "Your notes, or your audience's view"),
     ("glance", "At a glance", "What it does"),
     ("share", "Private by design", "How it stays out of your share"),
-    ("slides", "Presenting", "One slide at a time"),
     ("follow", "On-device intelligence", "Follows your slides"),
-    ("read", "Readability", "Make it easy to read"),
     ("demo", "Reliability", "Built for a live demo"),
     ("decisions", "Design", "Decisions and trade-offs"),
     ("shortcuts", "Keyboard", "Shortcuts"),
@@ -144,7 +142,7 @@ DECISIONS = [
      "Still works in any editor and in git."),
     ("decision-permissions", "Decision", "Exact first, then read",
      ["When Keynote or PowerPoint can say which", "slide is up, ask them. Read the screen only", "for apps that can't, and only when sure."],
-     "Two readings must agree before it moves."),
+     "Near-exact titles move it at once."),
 ]
 
 SHORTCUTS = [
