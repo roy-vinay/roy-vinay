@@ -108,6 +108,7 @@ SECTIONS = [
     ("glance", "At a glance", "What it does"),
     ("share", "Private by design", "How it stays out of your share"),
     ("slides", "Presenting", "One slide at a time"),
+    ("follow", "On-device intelligence", "Follows your slides"),
     ("read", "Readability", "Make it easy to read"),
     ("demo", "Reliability", "Built for a live demo"),
     ("decisions", "Design", "Decisions and trade-offs"),
@@ -120,9 +121,9 @@ GLANCE = [
     ("glance-private", "At a glance", "Private",
      ["Asks macOS to leave the notes out of every", "screen capture. You see them; your", "audience sees your slides."],
      "Checked in CI on every change."),
-    ("glance-slides", "At a glance", "One slide at a time",
-     ["Markdown notes with a line of --- between", "slides. Move from any app, or let the notes", "follow your slide keys."],
-     "⌃⌥→ and ⌃⌥← from any app."),
+    ("glance-slides", "At a glance", "Follows your slides",
+     ["Moves with Keynote and PowerPoint exactly,", "and with Google Slides or anything else by", "reading the slide's title on your Mac."],
+     "Or move by hand with ⌃⌥→ from any app."),
     ("glance-readable", "At a glance", "Easy to read",
      ["Size, typeface and spacing. Highlight what", "matters, by hand or by describing it to", "Apple's on-device model."],
      "Your notes never leave your Mac."),
@@ -141,9 +142,9 @@ DECISIONS = [
     ("decision-file", "Decision", "Emphasis beside the file",
      ["Highlights are saved next to each notes", "file, not inside it, so the file stays", "exactly as you wrote it."],
      "Still works in any editor and in git."),
-    ("decision-permissions", "Decision", "No permissions by default",
-     ["Global shortcuts need no permission.", "Following your slide keys is opt-in,", "since it needs Accessibility access."],
-     "Nothing to approve on first launch."),
+    ("decision-permissions", "Decision", "Exact first, then read",
+     ["When Keynote or PowerPoint can say which", "slide is up, ask them. Read the screen only", "for apps that can't, and only when sure."],
+     "Two readings must agree before it moves."),
 ]
 
 SHORTCUTS = [
@@ -152,6 +153,7 @@ SHORTCUTS = [
         (["⌃⌥Space"], "Start or stop auto-scroll"),
         (["⌃⌥↑", "⌃⌥↓"], "Scroll faster or slower"),
         (["⌃⌥T"], "Click-through on or off"),
+        (["⌃⌥F"], "Follow my slides on or off"),
         (["⌃⌥N"], "Show or hide the notes"),
     ]),
     ("In the notes", [
@@ -163,10 +165,10 @@ SHORTCUTS = [
     ]),
 ]
 
-STATUS = ("Status: 12 parser tests, Apple silicon and Intel builds, a screen-capture check, instructions not tested in CI.", [
-    ("Tests", ["12 parser tests", "on every change"]),
+STATUS = ("Status: 21 tests, Apple silicon and Intel builds, screen-capture and slide-reading checks, instructions not tested in CI.", [
+    ("Tests", ["21 tests, parsing and", "slide matching"]),
     ("Builds", ["Apple silicon and Intel,", "opens on macOS 13"]),
-    ("Checked in CI", ["Launch, linking, and", "hidden from capture"]),
+    ("Checked in CI", ["Hidden from capture,", "reading a slide's title"]),
     ("Not yet", ["Instructions untested", "in CI (no Apple AI)"]),
 ])
 
