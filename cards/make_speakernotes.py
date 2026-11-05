@@ -152,7 +152,8 @@ SHORTCUTS = [
         (["⌃⌥↑", "⌃⌥↓"], "Scroll faster or slower"),
         (["⌃⌥T"], "Click-through on or off"),
         (["⌃⌥F"], "Follow my slides on or off"),
-        (["⌃⌥N"], "Show or hide the notes"),
+        (["⌃⌥V"], "Scroll as I speak on or off"),
+        (["⌃⌥P"], "Park an audience question"),
     ]),
     ("In the notes", [
         (["→", "←", "Space"], "Next or previous slide"),
@@ -163,8 +164,8 @@ SHORTCUTS = [
     ]),
 ]
 
-STATUS = ("Status: 21 tests, Apple silicon and Intel builds, screen-capture and slide-reading checks, instructions not tested in CI.", [
-    ("Tests", ["21 tests, parsing and", "slide matching"]),
+STATUS = ("Status: 32 tests, Apple silicon and Intel builds, screen-capture and slide-reading checks, instructions not tested in CI.", [
+    ("Tests", ["32 tests: parsing, slide", "and speech matching"]),
     ("Builds", ["Apple silicon and Intel,", "opens on macOS 13"]),
     ("Checked in CI", ["Hidden from capture,", "reading a slide's title"]),
     ("Not yet", ["Instructions untested", "in CI (no Apple AI)"]),
